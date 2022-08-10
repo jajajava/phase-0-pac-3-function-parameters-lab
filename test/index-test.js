@@ -24,3 +24,21 @@ describe('introductionWithLanguageOptional(name, language)', function() {
     expect(introductionWithLanguageOptional("Gracie", "Python")).toEqual("Hi, my name is Gracie and I am learning to program in Python.");
   })
 })
+
+
+function introduction(name){
+console.log(`Hello, my name is ${name}`)
+}
+introduction("Aki", "Samip")
+
+function introductionWithLanguage(name, language){
+  console.log(`Hello, my name is ${name}, and I am learning to program in ${language}`)
+}
+introductionWithLanguage("Aki","Ember.js")
+introductionWithLanguage("Samip","React")
+
+function introductionWithLanguageOptional(name, language = "Javascript"){
+console.log(`Hello, my name is ${name} and I'm learning programming in ${language}.`)
+}
+introductionWithLanguageOptional("Gracie")
+introductionWithLanguageOptional("Gracie", "Python")
